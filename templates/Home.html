@@ -1,0 +1,72 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %} Home {% endblock %}
+
+{% block body %}
+
+
+<link rel="stylesheet"
+      href="/static/css/home_style.css">
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="/static/media/car2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/static/media/car1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/media/car3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<div class="card-group justify-content-center ">
+    <div class=" text-center">
+            <div class="card text-center mx-1 " style="width: 15rem; display:inline-block">
+                <img src="/static/media/Heart.png" class="card-img-top p-4" alt="..." style="height: 12rem";>
+                <div class="card-body">
+                    <h5 class="card-title">Heart Rate</h5>
+                    <p class="card-text">Let us take you into a deeper experience, make a moment a lasting conveyable memory..</p>
+                </div>
+            </div>
+    </div>
+    <div class=" text-center">
+            <div class="card text-center mx-1 " style="width: 15rem; display:inline-block">
+                <img src="/static/media/flask.png" class="card-img-top p-4" alt="..."  style="height: 12rem";>
+                <div class="card-body">
+                    <h5 class="card-title">Lab Test</h5>
+                    <p class="card-text">Let us take you into a deeper experience, make a moment a lasting conveyable memory.</p>
+                </div>
+            </div>
+    </div>
+    <div class=" text-center">
+            <div class="card text-center mx-1 " style="width: 15rem; display:inline-block">
+                <img src="/static/media/stethoscope.png" class="card-img-top p-4" alt="..." style="height: 12rem";>
+                <div class="card-body">
+                    <h5 class="card-title">Symptom Check</h5>
+                    <p class="card-text">Let us take you into a deeper experience, make a moment a lasting conveyable memory.</p>
+                </div>
+            </div>
+    </div>
+    <div class=" text-center">
+            <div class="card text-center mx-1 " style="width: 15rem; display:inline-block">
+                <img src="/static/media/chating.png" class="card-img-top p-4" alt="..." style="height: 12rem";>
+                <div class="card-body">
+                    <h5 class="card-title">Online Help</h5>
+                    <p class="card-text">Let us take you into a deeper experience, make a moment a lasting conveyable memory..</p>
+                </div>
+            </div>
+    </div>
+</div>
+
+{% endblock %}

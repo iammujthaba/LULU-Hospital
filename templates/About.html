@@ -1,0 +1,51 @@
+{% extends 'Index.html'%}
+{% load static %}
+{% block title %} About {% endblock %}
+
+{% block body %}
+<link rel="stylesheet"
+      href="{% static '/css/about_style.css' %}">
+<h2 class="text-center">About Us</h2>
+<hr>
+
+<section>
+<div class="border " style="background-color:#87CEFA;" id="pd">
+  <div class="row">
+    <div class="col-lg-8 col-sm-7">
+      <h2 id="h2p">Welcome to LULU Hospital!</h2>
+      <p id="txt"> We are a team of healthcare and technology enthusiasts dedicated to improving the patient experience through innovative solutions. Our hospital management app was created with the goal of streamlining and enhancing various aspects of hospital administration, from patient registration to discharge.
+We believe that technology has the power to transform the healthcare industry and make a meaningful difference in people's lives. That's why we designed our app with user-friendliness and efficiency in mind, while also ensuring the highest standards of data security and privacy.
+We are committed to providing exceptional service to our users and constantly improving our app through feedback and collaboration. Thank you for choosing LULU Hospital as your trusted healthcare partner.
+    </p>
+    </div>
+    <div class="col-lg-4 col-sm-5" >
+      <div class="card p-4 my-3 bg-primary" style="width:300px">
+    <img class="card-img-top" src="/static/media/6511591.jpg" alt="Card image">
+  </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-------------------------------------------------->
+<section class="mt-5">
+<div class="border " style="background-color:#87CEFA;" id="pd2">
+  <div class="row">
+    <div class="col-lg-3 col-sm-5" >
+       <div class="card p-4 my-3 bg-primary" style="width:300px" id="cr">
+    <img class="card-img-top" src="/static/media/me.jpg" alt="Card image">
+    </div>
+        </div>
+    <div class="col-lg-9 col-sm-7">
+      <h2 id="h2p2">Developer</h2>
+      <p id="txt2"> Hello! my name is MUJTHABA and I developed this hospital management website to add my portfolio for better job opportunities.
+          I used Django to develop this website and I also used other technologies like HTML, CSS, Javascript, and Bootstrap.
+          And this is not my first website (that I made with Django).
+          My first website is a program management website.
+          We can use that website to coordinate a zone-based program.
+          That is a very helpful full website for program coordinators</p>
+        </div>
+  </div>
+    </div>
+    </section>
+
+{% endblock %}

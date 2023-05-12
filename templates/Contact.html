@@ -1,0 +1,35 @@
+{% extends 'index.html' %}
+
+{% block title %} Contact {% endblock %}
+
+{% block body %}
+
+<link rel="stylesheet"
+      href="/static/css/contact_style.css">
+
+<div id="div0">
+    <div id="p">
+        <h5>CALL US</h5>
+        <p>+91 7025962175 justify-content-center</p>
+        <h5>LOCATION</h5>
+        <p>Kondotty, Malappuram, Kerala, India</p>
+        <h5>BUSINESS HOUrs</h5>
+        <p>9.00 AM - 6.00 PM, MON - FRI</p>
+    </div>
+    <div id="div1" class="Hide">
+        <div id="form">
+            <h4 class="text-center">Contact Us</h4>
+            <form action="" method="post">
+              {% csrf_token %}
+              <div class="form-control-lg border border-white col" id="form_box">
+                {{data.as_p}}
+              </div>
+              <div class="text-center text-lg-start mt-2 pt-2">
+                <button type="Submit" class="btn btn-primary btn-lg"
+                  style="padding-left: 2.5rem; padding-right: 2.5rem;">Submit</button>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

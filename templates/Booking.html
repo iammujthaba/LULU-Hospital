@@ -1,0 +1,35 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %} Booking {% endblock %}
+
+{% block body %}
+<h2 class="text-center">Booking</h2>
+<hr>
+<link rel="stylesheet"
+      href="/static/css/booking_style.css">
+
+<section class="vh-80">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-5">
+        <img src="/static/media/reg1.jpg"
+          class="img-fluid" alt="Sample image">
+      </div>
+      <div class="col-xl-4 offset-md-1 ">
+        <form action="" method="post">
+          {% csrf_token %}
+          <div class="form-control-lg border border-white " id="form_box">
+            {{data.as_p}}
+          </div>
+          <div class="text-center text-lg-start mt-2 pt-2">
+            <button type="Submit" onclick="showAlert()" class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem;">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!--js file linking-->
+<script type="text/javascript" src="{% static '/js/booking_alert.js' %}"></script>
+{% endblock %}

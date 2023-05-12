@@ -1,0 +1,36 @@
+#div0{
+width:100vw;
+height:300px;
+border:2px solid black;
+top:90px;
+background-color:#87CEFA;;
+position:relative;
+}
+#div1{
+position:absolute;
+top:-60px;
+bottom:-60px;
+right:7%;
+width:32%;
+height:150%;
+background-color:#F0F8FF;
+border: solid black;
+}
+#p{
+position:absolute;
+left:5%;
+top:15%;
+bottom:10%;
+}
+#form{
+position:absolute;
+left: 50%;
+top:10%;
+bottom:10%;
+transform: translateX(-50%);
+}
+@media screen and (max-width: 600px) {
+  div.Hide {
+    display: none;
+  }
+}

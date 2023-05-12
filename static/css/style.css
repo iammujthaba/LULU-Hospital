@@ -1,0 +1,19 @@
+li:hover{
+    background-color: #000000;
+    border-radius: 8px;
+    border: 1px solid #fff;
+}
+body{
+margin-bottom: 60px;
+}
+
+@media(max-width:992px){
+li:hover{
+    background-color: #000000;
+    border-radius: 8px;
+    border: 1px solid #fff;
+}
+body{
+margin-bottom: 100px;
+}
+}
